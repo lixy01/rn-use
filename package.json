@@ -32,8 +32,14 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepack": "bob build",
     "release": "release-it",
+    "u": "https://registry.npmjs.org",
+    "u2": "https://registry.npmmirror.com",
     "example": "yarn --cwd example",
-    "bootstrap": "yarn example && yarn install"
+    "bootstrap": "yarn example && yarn install",
+    "doc:start": "cd doc && yarn start",
+    "doc:build": "cd doc && yarn build",
+    "doc:serve": "cd doc && yarn serve",
+    "doc:deploy": "cd doc && yarn deploy"
   },
   "keywords": [
     "react-native",
@@ -133,6 +139,7 @@
   },
   "eslintIgnore": [
     "node_modules/",
+    "doc/",
     "lib/"
   ],
   "prettier": {
